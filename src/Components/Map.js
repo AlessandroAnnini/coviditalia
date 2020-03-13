@@ -1,7 +1,7 @@
-import React from "react";
-import * as d3 from "d3";
-import { geoMercator, geoPath } from "d3-geo";
-import _ from "lodash";
+import React from 'react';
+import * as d3 from 'd3';
+import { geoMercator, geoPath } from 'd3-geo';
+import maxBy from 'lodash.maxby';
 
 const customDomain = max => {
   const scale = [0, 0.1, 0.3, 0.57, 0.77, 0.83, 0.87, 0.9, 0.95, 0.98, 1];
@@ -24,7 +24,7 @@ const projection = geoMercator()
 const Map = ({ regions, data, dateIdx, onMouseOver }) => {
   let max = 0;
   data.forEach(pd => {
-    const currMax = _.maxBy(pd, "totale_casi").totale_casi;
+    const currMax = maxBy(pd, 'totale_casi').totale_casi;
     max = currMax > max ? currMax : max;
   });
 
@@ -34,7 +34,7 @@ const Map = ({ regions, data, dateIdx, onMouseOver }) => {
   // .domain([0, max]);
 
   return (
-    <svg viewBox="0 0 900 1130" style={{ border: "1px solid black" }}>
+    <svg viewBox="0 0 900 1130" style={{ border: '1px solid black' }}>
       <g className="regions">
         {regions.map((d, i) => (
           <path

@@ -1,10 +1,10 @@
-import React from "react";
-import Button from "carbon-components-react/lib/components/Button";
-import Slider from "carbon-components-react/lib/components/Slider";
-import { Add16, Subtract16 } from "@carbon/icons-react";
-import format from "date-fns/format";
+import React from 'react';
+import Button from 'carbon-components-react/lib/components/Button';
+import Slider from 'carbon-components-react/lib/components/Slider';
+import { Add16, Subtract16 } from '@carbon/icons-react';
+import format from 'date-fns/format';
 
-const DATE_FORMAT_ITA = "dd/MM/yyyy";
+const DATE_FORMAT_ITA = 'dd/MM/yyyy';
 
 const Controls = ({ onClick, days, value, currentDate, onSlide }) => {
   const currentDateFormatted = format(currentDate, DATE_FORMAT_ITA);
@@ -23,7 +23,7 @@ const Controls = ({ onClick, days, value, currentDate, onSlide }) => {
           iconDescription="add days"
           tooltipPosition="bottom"
           tooltipAlignment="start"
-          onClick={() => onClick("sub")}
+          onClick={() => onClick('sub')}
           style={{ marginRight: 16 }}
         />
         <Slider
@@ -42,7 +42,7 @@ const Controls = ({ onClick, days, value, currentDate, onSlide }) => {
           iconDescription="add days"
           tooltipPosition="bottom"
           tooltipAlignment="start"
-          onClick={() => onClick("add")}
+          onClick={() => onClick('add')}
         />
       </div>
     </div>

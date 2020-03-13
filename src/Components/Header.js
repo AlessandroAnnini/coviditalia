@@ -1,13 +1,13 @@
-import React from "react";
-import Search20 from "@carbon/icons-react/lib/search/20";
-import Notification20 from "@carbon/icons-react/lib/notification/20";
-import AppSwitcher20 from "@carbon/icons-react/lib/app-switcher/20";
+import React from 'react';
+import Search20 from '@carbon/icons-react/lib/search/20';
+import Notification20 from '@carbon/icons-react/lib/notification/20';
+import AppSwitcher20 from '@carbon/icons-react/lib/app-switcher/20';
 import {
   Header,
   HeaderName,
   HeaderGlobalAction,
   HeaderGlobalBar
-} from "carbon-components-react/lib/components/UIShell";
+} from 'carbon-components-react/lib/components/UIShell';
 
 const AppHeader = () => (
   <div className="container" style={{ marginBottom: 60 }}>

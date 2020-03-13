@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { csv as d3Csv } from "d3-fetch";
-import _ from "lodash";
+import { useState, useEffect } from 'react';
+import { csv as d3Csv } from 'd3-fetch';
+import _ from 'lodash';
 
 const getDataUrl = date =>
   `https://raw.githubusercontent.com/pcm-dpc/COVID-19/master/dati-province/dpc-covid19-ita-province-${date}.csv`;
@@ -21,8 +21,8 @@ export default (datesArray, provinces) => {
 
         const nextData = result.map(pd =>
           _(pd)
-            .keyBy("sigla_provincia")
-            .merge(_.keyBy(provinces, "properties.HASC_2"))
+            .keyBy('sigla_provincia')
+            .merge(_.keyBy(provinces, 'properties.HASC_2'))
             .values()
             .value()
         );

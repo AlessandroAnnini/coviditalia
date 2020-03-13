@@ -1,9 +1,9 @@
-import { useState, useEffect } from "react";
-import { json as d3Json } from "d3-fetch";
-import { feature } from "topojson-client";
+import { useState, useEffect } from 'react';
+import { json as d3Json } from 'd3-fetch';
+import { feature } from 'topojson-client';
 
-const regionsUrl = "./italy-regions.json";
-const provincesUrl = "./italy-provinces.json";
+const regionsUrl = './italy-regions.json';
+const provincesUrl = './italy-provinces.json';
 
 export default initObj => {
   const [result, setResult] = useState(initObj);
