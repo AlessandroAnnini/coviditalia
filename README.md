@@ -1,2 +1,0 @@
-# coviditalia
-Created with CodeSandbox

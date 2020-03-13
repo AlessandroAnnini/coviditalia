@@ -1,0 +1,60 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.home {
+  background: ivory;
+  border: 1px solid darkgray;
+  overflow: hidden;
+}
+
+.province {
+  /* stroke-width: 1; */
+  /* stroke: darkslategrey; */
+  /* fill: white; */
+  transition: all 0.25s ease-in-out;
+}
+
+.province:hover {
+  cursor: pointer;
+  /* fill: #555555; */
+  opacity: 0.7;
+}
+
+.controlsContainer {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.controlsSecondRow {
+  display: flex;
+}
+
+.dateText {
+  height: 2rem;
+  outline: none;
+  color: #c6c6c6;
+  width: 120px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.125rem;
+  letter-spacing: 0.16px;
+  background-color: #f4f4f4;
+  padding-top: 8px;
+  text-align: center;
+  color: #161616;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+.placeDescription {
+  font-size: 1rem;
+  font-weight: 400;
+  height: 2rem;
+  padding: 8px;
+  color: #161616;
+  letter-spacing: 0.16px;
+}
